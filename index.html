@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Cronômetro Digital</title>
+
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="">
+        <div class="wrapper">
+
+            <h1 class="">Cronômetro Digital</h1>
+
+            <div class="timer">
+                <span id="hh">00</span>
+                <span class="sep">:</span>
+                <span id="mm">00</span>
+                <span class="sep">:</span>
+                <span id="ss">00</span>
+                <span class="sep">:</span>
+                <span id="ds">00</span>
+            </div>
+
+            <div class="inputs">
+                <input type="button" value="iniciar" id="start" onclick="func()" status="of">
+                <input type="button" value="zerar" id="reset">
+                <input type="button" value="marcar" id="mark">
+            </div>
+            
+            <div class="marcacoes">
+                <table class="table-scroll small-first-col">
+                    <thead class="table-scroll small-first-col">
+                        <tr>
+                            <th>Marcação</th>
+                            <th>Tempo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpo-tabela" class="body-half-screen">
+                      
+                    </tbody>
+                </table>
+                
+                <input type="button" value="limpar" id="clear">
+            </div>
+
+        </div>
+
+        <div class="theme">
+            <input type="checkbox" class="checkbox" id="chk" checked/>
+            <label class="label" for="chk">
+                <i class='bx bx-moon' style="color: rgb(95, 95, 95);"></i>
+                <i class='bx bx-sun' style="color: rgb(235, 242, 113);"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+    </body>
+
+    <script src="script.js"></script>
+</html>
